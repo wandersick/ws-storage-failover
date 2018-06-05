@@ -1,0 +1,1 @@
+Volume size, RAID types are dynamically acquired from SAN storage rather than specifying in config files.

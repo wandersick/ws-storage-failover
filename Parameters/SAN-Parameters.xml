@@ -1,0 +1,67 @@
+<Definitions>
+	<Servers>
+		<!-- General Server -->
+		<Server>
+			<ReplicationGroups>
+				<RemoteReplGroup>
+					<!-- The name of the group must be less than 23 characters -->
+					<Prod>REPL_GROUP_1_FAILOVER</Prod>
+					<DR>REPL_GROUP_1_FAILBACK</DR>
+				</RemoteReplGroup>
+			</ReplicationGroups>
+			<LUNs>
+				<!-- Select a drive letter that is further apart from A-K to prevent the case where some letters are assigned to something else. -->
+				<LUN Label="GEN_DRIVE_L">
+					<ProdClusterName>CLUSTER1_L</ProdClusterName>
+					<DRDriveLetter>L:</DRDriveLetter>
+				</LUN>
+				<LUN Label="GEN_DRIVE_M">
+					<ProdClusterName>CLUSTER1_M</ProdClusterName>
+					<DRDriveLetter>M:</DRDriveLetter>
+				</LUN>
+				<LUN Label="GEN_DRIVE_N">
+					<ProdClusterName>CLUSTER1_N</ProdClusterName>
+					<DRDriveLetter>N:</DRDriveLetter>
+				</LUN>
+				<LUN Label="GEN_DRIVE_O">
+					<ProdClusterName>CLUSTER1_O</ProdClusterName>
+					<DRDriveLetter>O:</DRDriveLetter>
+				</LUN>
+				<LUN Label="GEN_DRIVE_P">
+					<ProdClusterName>CLUSTER1_P</ProdClusterName>
+					<DRDriveLetter>P:</DRDriveLetter>
+				</LUN>
+				<LUN Label="GEN_DRIVE_Q">
+					<ProdClusterName>CLUSTER1_Q</ProdClusterName>
+					<DRDriveLetter>Q:</DRDriveLetter>
+				</LUN>
+			</LUNs>
+		</Server>
+		<!-- Hyper-V Server -->
+		<Server>
+			<ReplicationGroups>
+				<RemoteReplGroup>
+					<Prod>REPL_GROUP_2_FAILOVER</Prod>
+					<DR>REPL_GROUP_2_FAILBACK</DR>
+				</RemoteReplGroup>
+			</ReplicationGroups>
+			<LUNs>
+				<!-- Select a drive letter that is further apart from A-K to prevent the case where some letters are assigned to something else. -->
+				<LUN Label="VIRT_DRIVE_CSV1">
+					<ProdClusterName>CLUSTER2</ProdClusterName>
+					<DRDriveLetter>M:</DRDriveLetter>
+					<VirtualMachines>
+						<VM Label="VM_NAME">
+							<VMConfig>
+								<!-- For example, Cluster Shared Volumes in production site -->
+								<Prod>C:\ClusterStorage\Volume1\VM_NAME\Virtual Machines\123ABCDE-ABCD-ABCD-ABCD-12345ABCDEFR.xml</Prod>
+								<!-- If disaster recovery drive letter is changed above, below VMConfig path should also be adjusted accordingly -->
+								<DR>M:\VM_NAME\Virtual Machines\123ABCDE-ABCD-ABCD-ABCD-12345ABCDEFR.xml</DR>
+							</VMConfig>
+						</VM>
+					</VirtualMachines>
+				</LUN>
+			</LUNs>
+		</Server>
+	</Servers>
+</Definitions>
