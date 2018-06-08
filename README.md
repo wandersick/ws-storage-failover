@@ -16,7 +16,7 @@ The scripts were designed to be as reusable (e.g. parameterized) as possible, in
 
 # Features
 
-- Perform failover and failback between replicated SAN storage with Microsoft Failover Cluster (Hyper-V and others)
+- Script failover and failback between replicated SAN storage with Microsoft Failover Cluster (Hyper-V and others)
 - Operator-friendly interactive console menus through which failover, failback and validation, status reporting can be performed
 - Steps can be performed individually or all at once
 - Scripted in PowerShell (Windows operations) and pseudo code (SAN-specific operations) as a template to be modified or customized
