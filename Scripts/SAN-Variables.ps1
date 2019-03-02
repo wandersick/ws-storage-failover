@@ -5,7 +5,7 @@
 #   with an Easy-to-Use Interactive Console Menu for Operators
 #   by @wandersick - https://wandersick.blogspot.com
 #
-#   Version: 1.0 (first-released December 2014)
+#   Version: 1.0.1 (updated on 2 March 2019)
 #
 #   Subscript Name: SAN Storage System - Processing of Variables (SAN-Variables.ps1)
 #
@@ -70,7 +70,7 @@ Foreach ($xmlLUN in $LUN.label) {
 	$sanCmd = <# display logical disk and LUN details for $tmpLUNDR #>
 	# It is required to use $xmlLUN as a workaround below since child logical disk does not contain dr_ prefix although parent LUN is dr_.
 	$out = Run-Plink-DRsite -exec $sanCmd | findstr /i "$xmlLUN"
-	$out = $out -split " "
+	$out = $out -split "\s+"
 
 	Add-Member -InputObject $objMember -MemberType NoteProperty -Name 'ReplRaidConfig' -Value $out[2]
 	Add-Member -InputObject $objMember -MemberType NoteProperty -Name 'UserRaidConfig' -Value $out[2]
@@ -79,7 +79,7 @@ Foreach ($xmlLUN in $LUN.label) {
 
 	$sanCmd = <# display a list of LUNs for $tmpLUNDR #>
 	$out = Run-Plink-DRsite -exec $sanCmd | findstr /i "$tmpLUNDR"
-	$out = $out -split " "
+	$out = $out -split "\s+"
 	$out = [Int]$out[-1]/1024
 
 	Add-Member -InputObject $objMember -MemberType NoteProperty -Name 'LUNSize' -Value $out
