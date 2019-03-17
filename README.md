@@ -1,5 +1,8 @@
 Note: This is a template to ease development. The storage-vendor-specific part of the scripts have to be coded by yourself.
 
+For download of the latest version, visit Microsoft TechNet Gallery:
+- https://gallery.technet.microsoft.com/General-SAN-Storage-dc8875d8
+
 # Introduction
 
 There sometimes comes a need to simply complex operations, in this case failover and failback operations of SAN storage replication between sites (e.g. production and DR), for reasons such as letting operators or the less technically-confident colleagues to more easily perform the operations in case of disasters or drill tests. To achieve that, this template has been created.
