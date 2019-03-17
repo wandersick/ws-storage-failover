@@ -1,7 +1,6 @@
-Note: This is a template to ease development. The storage-vendor-specific part of the scripts have to be coded by yourself.
+**Note**: This is a template to ease development. The storage-vendor-specific part of the scripts have to be coded by yourself.
 
-For download of the latest version, visit Microsoft TechNet Gallery:
-- https://gallery.technet.microsoft.com/General-SAN-Storage-dc8875d8
+For download of the latest version, visit its [page at Microsoft TechNet Gallery](https://gallery.technet.microsoft.com/General-SAN-Storage-dc8875d8).
 
 # Introduction
 
