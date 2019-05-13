@@ -138,3 +138,10 @@ The scripts were designed to be as reusable (e.g. parameterized) as possible, in
 - There is no one-size-fits-all solution – modification is inevitable
 - Not all error messages are separately recorded in error log file; some errors only exist in the main log. Outputs and errors encountered in the menu are not logged
 - SAN storage credentials are stored in the ps1 configuration file in clear text (protect the file properly)
+
+## Release history
+
+| Ver | Date | Changes |
+| --- | --- | --- |
+| 1.1 | 20190302 | Improved delimiter choice in Scripts\SAN-Variables.ps1 |
+| 1.0a | 20141231 | First released in December 2014 |
