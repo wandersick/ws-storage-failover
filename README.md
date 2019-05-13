@@ -103,7 +103,7 @@ The scripts were designed to be as reusable (e.g. parameterized) as possible, in
 12. Stop VM in DR Site
 13. Take Disk Offline in DR Site Host
 14. Unpresent Cloned LUN from DR Site Host
-15. .Stop and Delete Replication Group - from DR Site to Production Site
+15. Stop and Delete Replication Group - from DR Site to Production Site
 16. Present LUN of Replicated CSV to Production Site Hosts
 17. Run CSV in Production Site
 18. Import VM in Production Site
@@ -129,7 +129,7 @@ The scripts were designed to be as reusable (e.g. parameterized) as possible, in
 12. Stop and Delete Replication Group - from DR Site to Production Site
 13. Present LUN of Replicated CSV to Production Site Hosts
 14. Run CSV in Production Site
-15. .Create Replication Group - from Production Site to DR Site
+15. Create Replication Group - from Production Site to DR Site
 16. Add LUN to Replication Group - from Production Site to DR Site
 17. Run Replication Group - from Production Site to DR Site
 
