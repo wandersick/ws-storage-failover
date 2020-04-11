@@ -4,7 +4,7 @@ For download of the latest version, visit its [page at Microsoft TechNet Gallery
 
 # Introduction
 
-There sometimes comes a need to simply complex operations, in this case failover and failback operations of SAN storage replication between sites (e.g. production and DR), for reasons such as letting operators or the less technically-confident colleagues to more easily perform the operations in case of disasters or drill tests. To achieve that, this template has been created.
+There sometimes comes a need to simplify complex operations, in this case failover and failback operations of SAN storage replication between sites (e.g. production and DR), for reasons such as letting operators or the less technically-confident colleagues to more easily perform the operations in case of disasters or drill tests. To achieve that, this template has been created.
 
 Written primarily in PowerShell, this package contains a set of SAN storage failover and failback scripts for Microsoft Failover Cluster (including Hyper-V cluster) and vendor-neutral pseudo code for SAN storage (for further modification to support different SAN vendors). Not only does it perform storage failover and failback, services running on top of it such as databases and virtual machines can also be catered.
 
