@@ -32,7 +32,7 @@ The scripts were designed to be as reusable (e.g. parameterized) as possible, in
 
 - SAN storage systems with SAN replication enabled (2 sites – production and DR sites assumed) with hosts running Failover Cluster (e.g. Hyper-V) in each site
 - A Windows client that runs the console menu with PowerShell 3.0 or above (comes with Windows 8.1 and Windows Server 2012 R2)
-- PuTTY should be installed under a location specified in SAN-Parameters.ps1
+- [PuTTY](https://drive.google.com/file/d/14-Iv8byPYI9dq6dQVg3UOBJEVy0tgC3X/view?usp=sharing) should be installed under a location specified in SAN-Parameters.ps1
 - A one-time authentication may be required by connecting to SAN storage systems in both sites via SSH (with PuTTY or plink.exe) in order to cache the host key in registry
 - Run PowerShell as Administrator prior to running the Console Menu script
 
